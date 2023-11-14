@@ -1,0 +1,308 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    line-height: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid rgb(183, 182, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+.sidebar img {
+    width: 50%;
+    margin: 10px;
+}
+
+.close {
+    display: none;
+}
+
+.menu {
+    width: 350px;
+    height: 100%;
+    background-color: #fff ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid rgb(183, 182, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 90;
+    left: -1000px;
+    transition: all 0.7s linear;
+}
+
+.menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu ul li {
+    color: #1387fc;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.sections {
+    margin: 50px 0 100px;
+    display: flex;
+
+}
+
+.section {
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid rgb(209, 208, 208);
+    color: #4b4a4a;
+    cursor: pointer;
+}
+.section:first-child{
+    background-color: #1387fc;
+    color: #fff;
+}
+
+.accordion1 , .accordion2 , .accordion3{
+    position: relative;
+    width: 70%;
+    display: none;
+
+}
+.accordion1{
+    display: block;
+}
+
+.box {
+    position: relative;
+    border-bottom: 1px solid rgb(235, 233, 233);
+}
+
+.box .label {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.box .label::before {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    transform: translateY(-10%);
+    font-size: 25px;
+}
+
+.box.active .label::before {
+    content: "-";
+}
+
+.box .content {
+    font-size: 13px;
+    line-height: 1.7;
+    display: none;
+    overflow: hidden;
+    padding: 0 20px;
+    color: rgb(88, 87, 87);
+
+}
+
+.box.active .content {
+    display: block;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.right .top{
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+.top .first{
+    width: 100%;
+    height: 15%;
+    box-shadow: 0 2px rgb(232, 231, 231);
+    border-radius: 10px;
+}
+.top .second{
+    width: 100%;
+    height: 82%;
+    box-shadow: 0 2px rgb(232, 231, 231);
+    border-radius: 10px;
+}
+.right .bottom{
+    width: 80%;
+    height: 50%;
+    box-shadow: 0 2px rgb(232, 231, 231);
+    border-radius: 10px;
+}
