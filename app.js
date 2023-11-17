@@ -80,3 +80,38 @@ box.forEach(boxes => {
 });
 
 
+
+const ctx = document.getElementById('firstChart');
+const sChart=document.getElementById('secondChart');
+
+new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Product 1', 'Product 2'],
+    datasets: [{
+     backgroundColor:['#165BAA', '#A155B9'],
+      data: [55, 45],
+      borderWidth: 0,
+      rotation:100
+    }]
+  }
+
+}
+);
+
+
+new Chart(sChart, {
+    type: 'bar',
+    data:{
+        labels: ["Product 1","Product 2"],
+        datasets:[
+            {
+                backgroundColor:['#165BAA', '#A155B9'],
+                data: [55,45],
+                label: ' Product List'
+            }
+        ]
+    }
+})
+
+
