@@ -115,3 +115,18 @@ new Chart(sChart, {
 })
 
 
+let value = document.querySelectorAll('.value-num');
+let interval= 5000;
+ value.forEach( valueNum =>{
+    let starValue=0;
+    let endValue=parseInt(valueNum.getAttribute("data-val"));
+    let duration=Math.floor(interval / endValue);
+    let counter= setInterval(function(){
+        starValue+=1;
+        valueNum.textContent=starValue;
+        if(starValue===endValue){
+            clearInterval(counter);
+        }
+    }, duration)
+ })
+
