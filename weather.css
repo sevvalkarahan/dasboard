@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid rgb(183, 182, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+.sidebar img {
+    width: 50%;
+    margin: 10px;
+}
+
+.close {
+    display: none;
+}
+
+.menu {
+    width: 350px;
+    height: 100%;
+    background-color: #fff ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid rgb(183, 182, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 90;
+    left: -1000px;
+    transition: all 0.3s linear;
+}
+
+.menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #1387fc;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+
+}
+.content{
+    width: 100%;
+}
+.searchInput{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.searchCity{
+    width: 350px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgb(154, 154, 154);
+    font-size: 18px;
+}
+.top{
+    width: 100%;
+    height: 55%;
+    display: flex;
+}
+.top-left{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-left img{
+    width: 50%;
+    height: auto;
+}
+
+.top-right{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-right .first.active{
+    width: 90%;
+    height: 50%;
+    border-bottom: 1px solid rgb(188, 186, 186);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 20px;
+}
+
+.first .city{
+    font-size: 25px;
+}
+.first .degree{
+    font-size: 40px;
+    font-weight: 900;
+}
+.first .desc{
+    font-style: italic;
+}
+.top-right .second{
+    width: 90%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
+}
+.second div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    gap: 5px;
+    
+}
+.second div span{
+    font-size: 20px;
+}
+.rFeel, .windSpeed, .hum, .sun{
+    margin-left: 7px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.bottom{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom .bottom-container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+}
+.bottom-container div.active{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid rgb(163, 161, 161,.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottom-container div:last-child{
+    border: none;
+}
+.bottom-container div .description{
+    font-style: italic;
+    font-size: 18px;
+}
+.bottom-container div .day{
+    font-weight: 600;
+    font-size: 22px;
+}
+
