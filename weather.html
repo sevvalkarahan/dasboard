@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather</title>
+</head>
+
+<body onload="page_loading()">
+    <div class="container">
+        <div class="sidebar">
+            <img class="logo" src="image/logo.png" alt="">
+            <img class="open" src="image/open.png" alt="">
+            <img class="close" src="image/close.png" alt="">
+            <img class="settings" src="image/settings.png" alt="">
+
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">ANASAYFA</a>
+                </li>
+
+                <li>
+                    <a href="weather.html">HAVA DURUMU</a>
+                </li>
+                <li>
+                    <a href="">MARKET</a>
+                </li>
+                <li>
+                    <a href="news.html">GLOBAL HABER</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="searchInput">
+            <input class="searchCity" type="search" placeholder="Şehir Giriniz">
+        </div>
+        <div class="top">
+            <div class="top-left">
+                <img class="weather-img" src="">
+            </div>
+            <div class="top-right">
+                <div class="first">
+                    <p class="city"></p>
+                    <p class="degree"></p>
+                    <p class="desc"></p>
+                </div>
+                <div class="second">
+                    <div class="FeelsLike">
+                        <span>
+                            <i style="color: #f41f1f;"></i>
+                        </span>
+                        <span class="feelsSpan"></span>
+                        <span class="rFeel"></span>
+                    </div>
+                    <div class="wind">
+                        <span>
+                            <i style="color: #1387fc;"></i>
+                        </span>
+                        <span class="windSpan"></span>
+                        <span class="windSpeed"></span>
+                    </div>
+                    <div class="humidity">
+                        <span>
+                            <i style="color: #1387fc;"></i>
+                        </span>
+                        <span class="humSpan"></span>
+                        <span class="hum"></span>
+                    </div>
+                    <div class="sunrise_sunset">
+                        <span>
+                            <i style="color: #efd937;"></i>
+                        </span>
+                        <span class="sunSpan"></span>
+                        <span class="sun"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-container">
+                <div class="weather-one">
+                    <img src="">
+                    <p class="description"></p>
+                    <p class="day"></p>
+                    <p class="min-max-temp"></p>
+                </div>
+                <div class="weather-two">
+                    <img src="">
+                    <p class="description"></p>
+                    <p class="day"></p>
+                    <p class="min-max-temp"></p>
+                </div>
+                <div class="weather-three">
+                    <img src="">
+                    <p class="description"></p>
+                    <p class="day"></p>
+                    <p class="min-max-temp"></p>
+                </div>
+                <div class="weather-four">
+                    <img src="">
+                    <p class="description"></p>
+                    <p class="day"></p>
+                    <p class="min-max-temp"></p>
+                </div>
+                <div class="weather-five">
+                    <img src="">
+                    <p class="description"></p>
+                    <p class="day"></p>
+                    <p class="min-max-temp"></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
