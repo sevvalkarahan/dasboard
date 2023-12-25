@@ -1,2 +1,6 @@
 ![](image/output1.png)
 ![](image/output2.png)
+![](image/weather1.png)
+![](image/weather2.png)
+![](image/news1.png)
+![](image/news2.png)
